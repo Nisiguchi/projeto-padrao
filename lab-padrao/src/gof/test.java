@@ -2,7 +2,7 @@ package gof;
 
 public class test {
     public static void main(String[] args) {
-        singletonLazy lazy = singletonLazy.getInstancia();
+        /*singletonLazy lazy = singletonLazy.getInstancia();
         System.out.println(lazy);
         lazy = singletonLazy.getInstancia();
         System.out.println(lazy);
@@ -15,6 +15,6 @@ public class test {
         singletonLazyHolder lazyHolder = singletonLazyHolder.getInstancia();
         System.out.println(lazyHolder);
         lazyHolder = singletonLazyHolder.getInstancia();
-        System.out.println(lazyHolder);
+        System.out.println(lazyHolder);*/
     }
 }
