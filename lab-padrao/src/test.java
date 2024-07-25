@@ -1,8 +1,5 @@
-import strategy.comportamento;
-import strategy.comportamentoAgressivo;
-import strategy.comportamentoDefensivo;
-import strategy.comportamentoNormal;
-import strategy.robo;
+import facade.fac;
+
 
 
 public class test {
@@ -20,17 +17,19 @@ public class test {
         singletonLazyHolder lazyHolder = singletonLazyHolder.getInstancia();
         System.out.println(lazyHolder);
         lazyHolder = singletonLazyHolder.getInstancia();
-        System.out.println(lazyHolder);*/
+        System.out.println(lazyHolder);
 
 
-    comportamento normal = new comportamentoNormal();
-    comportamento defensivo = new comportamentoDefensivo();
-    comportamento agressivo = new comportamentoAgressivo();
+        comportamento normal = new comportamentoNormal();
+        comportamento defensivo = new comportamentoDefensivo();
+        comportamento agressivo = new comportamentoAgressivo();
 
-    robo rob = new robo();
-    rob.setComportamento(normal);
+        robo rob = new robo();
+        rob.setComportamento(normal);
 
-    rob.mover();
+        rob.mover();*/
 
+        fac fac = new fac();
+        fac.migrarCliente("venus", "123445431");
     }
 }
